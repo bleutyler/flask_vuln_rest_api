@@ -108,8 +108,6 @@ Unit testing provided in sample script: <pre>test_server.py</pre>
 These unit tests must be run with the flask application running.
 
 
-If these are not correct, update them in the **setUp()** method of the test script.
-
 ### POSTMAN
 
 Tested in Postman to simulate JSON HTTP POST Requests
