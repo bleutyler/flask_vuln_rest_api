@@ -85,3 +85,7 @@ def ingest_csv_data_for_host(host_ip: str) -> dict:
                 vuln_details_dict['id'] = row[config.csv_column_vuln_id]
                 return_list.append( vuln_details_dict )
     return return_list
+
+
+if __name__ == '__main__':
+    vuln_api.run(host=config.host_ip, port=config.host_port)

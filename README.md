@@ -8,6 +8,14 @@ Windows:
 
 <pre>set FLASK_APP=server.py</pre>
 
+Update the **config.py** file *host* and *port* to make sure they are correct.
+Currently set to the defaults: 
+
+| | Value|
+| --- | --- |
+| Default IP | 127.0.0.1 |
+| Default Port | 5000 |
+
 ## Run Server
 
 To Execute, run the following in the folder of the application:
@@ -97,12 +105,8 @@ If the request cannot be processed, such as the IP address is not in the data, t
 
 
 Unit testing provided in sample script: <pre>test_server.py</pre>
-These unit tests must be run with the flask application running.  Verify the host and port numbers used are correct.  Currently set to the defaults: 
+These unit tests must be run with the flask application running.
 
-| | Value|
-| --- | --- |
-| Default IP | 127.0.0.1 |
-| Default Port | 5000 |
 
 If these are not correct, update them in the **setUp()** method of the test script.
 

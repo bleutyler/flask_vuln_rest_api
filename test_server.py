@@ -1,11 +1,12 @@
 import unittest
 import requests
 import json
+import config
 
 class SimpleRESTApiTests(unittest.TestCase):
 
     def setUp(self):
-        self.endpoint_base = 'http://127.0.0.1:5000'
+        self.endpoint_base = f'http://{config.host_ip}:{config.host_port}'
         self.valid_ips_in_csv = [ '10.128.35.79', '2.25.181.181' ]
         self.invalid_ips_in_csv = [ '1.1.1.1' ]
         self.pagination_json = { 'page': 1, 'size': 5 }
